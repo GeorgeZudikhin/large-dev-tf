@@ -10,7 +10,7 @@ terraform {
 resource "stackit_ske_cluster" "large-dev" {
   project_id             = var.stackit_project
   name                   = "large-dev"
-  kubernetes_version_min = "1.27.15"
+  kubernetes_version_min = "1.29.6"
   node_pools = [
     {
       name               = "np-dev"
